@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.competitions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.competitions-table th, .competitions-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.competitions-table th {
+    background-color: #f4f4f4;
+}
+
+.matches-section {
+    margin-top: 20px;
+}
+
+.month-section {
+    margin-top: 20px;
+}
+
+.match-card {
+    width: 30%; /* 카드의 크기를 전체 화면의 30%로 조정 */
+    margin: 15px auto; /* 위아래로 15px, 좌우는 자동으로 중앙 정렬 */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px; /* 기존 20px에서 10px으로 수정 */
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-emblem {
+    width: 40px; /* 기존 60px에서 40px으로 수정 */
+    height: 40px; /* 기존 60px에서 40px으로 수정 */
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.teams-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vs {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.match-date {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.match-result {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.competitions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.competition-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.competition-card:hover {
+    transform: scale(1.05);
+}
+
+.competition-emblem {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.competition-card h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* FootballCompetitions.css - 로딩 애니메이션 추가 */
+
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loading-gif {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
